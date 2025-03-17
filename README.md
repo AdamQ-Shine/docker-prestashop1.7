@@ -42,4 +42,4 @@ Once the containers are running, access PrestaShop by navigating to [localhost:8
 
 Follow the on-screen instructions to complete the PrestaShop installation.
 
-Note: when you're asked for database credentials, set "mariadb" as the host instead of the default localhost, since PrestaShop is running inside a container and must connect to the database container.
+Note: when you're asked for database credentials, set the mariasb container's name (as shown by running `docker ps`) as the host instead of the default localhost, since PrestaShop is running inside a container and must connect to the database container.

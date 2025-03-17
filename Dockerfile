@@ -1,4 +1,4 @@
-FROM php:8.1-apache
+FROM php:7.4-apache
 
 # Install necessary extensions for PrestaShop
 RUN apt-get update && apt-get install -y \
@@ -25,7 +25,7 @@ RUN apt-get update && apt-get install -y nodejs npm
 # Install NVM
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 
-# Set Apache Document Root to /var/www/html (if necessary)
+# Set Apache Document Root to /var/www/html
 RUN sed -i 's#/var/www/html#/var/www/html#g' /etc/apache2/sites-available/000-default.conf
 RUN a2enmod rewrite
 
