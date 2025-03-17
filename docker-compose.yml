@@ -17,7 +17,7 @@ services:
       - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
       - MYSQL_DATABASE=${MYSQL_DATABASE}
     volumes:
-      - mariadb_data_shine_picking_dashboard_prestashop:/var/lib/mysql
+      - your_project_name:/var/lib/mysql
       - ./my.cnf:/etc/mysql/conf.d/my.cnf
     restart: unless-stopped
     ports:
@@ -36,7 +36,7 @@ services:
       - "8081:80"
 
 volumes:
-  mariadb_data_shine_picking_dashboard_prestashop:
+  your_project_name:
 
 networks:
   default:
