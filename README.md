@@ -54,8 +54,8 @@ The s in drwxrwsr-x confirms setgid is active.
 You probably want to replace the placeholder credentials set in docker-compose.yml before.
 
 Once ready, run the Docker setup:
-- Build the containers using `docker-compose build`.
-- Start the containers using `docker-compose up -d`.
+- Build the containers using `docker-compose build`
+- Start the containers using `docker-compose up -d`
 
 
 ### 8. Install PrestaShop
